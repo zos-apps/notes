@@ -13,10 +13,27 @@ npm install github:zos-apps/notes
 ## Usage
 
 ```tsx
-import ZNotes from '@zos-apps/notes';
+import App from '@zos-apps/notes';
 
-function App() {
-  return <ZNotes />;
+function MyApp() {
+  return <App />;
+}
+```
+
+## Package Spec
+
+App metadata is defined in `package.json` under the `zos` field:
+
+```json
+{
+  "zos": {
+    "id": "ai.hanzo.notes",
+    "name": "Notes",
+    "icon": "📝",
+    "category": "productivity",
+    "permissions": ["storage"],
+    "installable": true
+  }
 }
 ```
 
